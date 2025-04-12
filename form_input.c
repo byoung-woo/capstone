@@ -40,7 +40,7 @@ void handle_form_input(int client_fd, const char *path) {
                 strncpy(lang, val, MAX_VAL - 1);
                 lang[MAX_VAL - 1] = '\0';
             }
-            // 추가 파라미터는 여기 else-if 블록에 더 넣으시면 됩니다.
+     
         }
         token = strtok(NULL, "&");
     }

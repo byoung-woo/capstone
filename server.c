@@ -11,7 +11,7 @@
 #define PORT 8080
 #define BUFFER_SIZE 4096
 
-// 클라이언트 요청을 읽고, 로깅한 뒤 경로별 핸들러로 넘겨줍니다.
+
 void handle_client(int client_fd, struct sockaddr_in *client_addr) {
     char buffer[BUFFER_SIZE];
     int bytes_read = read(client_fd, buffer, BUFFER_SIZE - 1);
